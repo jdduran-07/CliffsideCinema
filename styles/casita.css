@@ -1,0 +1,311 @@
+/*Box sizing for all elements*/
+* {
+	box-sizing:border-box;
+}
+/*styles for the body element*/
+body {
+	background-color: #330000; /*Set background color*/
+	color: #221811; /*Set text color*/
+	font-family: Tahoma, Arial, sans-serif; /*Define font family*/
+	margin: 0;
+}
+/*Styles for the Wrapper*/
+#wrapper { 
+	background-color: #FFFFFF; /*Set background color*/
+	padding: 0;  
+}
+/*Styles for the Header*/
+
+header a {
+	text-decoration: none; /*remover underline from links*/
+}
+header a:link {
+	color: #FF0000; /*link color*/
+}
+header a:visited {
+	color: #90745D  /*Visited link color*/
+}
+header a:hover {
+	color: #FFD700  /*Hover link color*/
+}
+/*Styles for the headers*/
+.header img {
+	float: left;
+	max-width: 180px;
+	max-height: 180px;
+}
+.header h1 {
+	text-align: center;
+	font-size: 2em; /*Set font size for h1*/
+	text-shadow: 2px 2px 5px Red;
+}
+h2 {
+	color: #8C3826; /*Set font color for h2*/
+} 
+h3, dt { color: #8C3826; /*Set text color for h3 and dt*/
+}
+h4 {
+	background-color: #D2B48C; /*Set background color for h4*/
+	font-size: 1.2em; /*Set font size for h4*/ 
+	padding-left: .5em; /*Add left padding*/
+	padding-bottom: 0; /*Add bottom padding*/
+	text-transform: uppercase; /*Convert text to uppercase*/
+	border-bottom: 1px solid #221811; /*Add bottom border*/
+	clear: left; /*Clear Float*/
+}
+/*Styles for Navigation*/
+nav {
+	text-align: center; /*Align text to the center*/
+	font-size: 1.5em; /*Set font size*/
+	background-color: #FFFFFF;
+}
+nav a {
+	text-decoration: none; /*Remove underline from links*/
+}
+/*Pseudo class for all nav links*/
+nav a:link {
+	color: #FF4500; /*link color*/
+} 
+nav a:visited {
+	color:  #800000; /*Visited link color*/
+}
+nav a:hover {
+	color: #FF4500; /*Hover link color*/
+}
+nav ul {
+	list-style-type: none; /*Remove list bullets*/
+	padding: 0; /*Remove Default padding*/
+	margin: 0; /*Remover Default Margins*/
+	font-size: 1.25em; /*Set Font Size*/
+	display: flex; /*Use flexbox*/
+	flex-direction: column; /*Arrange items in a column*/
+}
+nav li {
+	border-bottom: 1px solid #000000; /*Add bottom border*/
+	padding: .5em 1em; /*Add padding*/
+	width: 100%; /*Set width*/
+	text-shadow: 2px 2px 5px black;
+}
+/*Styles for the Main Content*/
+main {
+	display: block; /*Display as block element*/
+	padding: 0 0 2em 0; /*Set padding*/
+	background-color: #CCCCCC; /*Set background color*/
+}
+main h2,h3,h4,p,div,dl {
+	padding-left: 1em; /*Add left padding*/
+	padding-right: 1em; /*Add right padding*/
+}
+main ul { padding-left: 2em; } /*Add left padding*/
+
+.red {background-color:#FF0000;
+color:#FFD700; 
+text-align: center;
+text-shadow: 2px 2px black;
+border-radius: 15px;
+padding: 10px;
+
+}
+/*Styles for Details*/
+
+.details {
+	padding-left: 20%; /*Add left padding*/
+	padding-right: 20%; /*Add right padding*/
+	overflow: auto; /*Add Overflow*/
+}
+.responsive {
+	max-width: 90%; 
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 9px solid #ddd;
+    border-radius: 4px;
+	padding: 5px;
+}
+
+/*Styles for the headers*/
+h1 {
+	font-size: 2em; /*Set font size for h1*/
+
+}
+h2 {
+	color: #800000; /*Set font color for h2*/
+	text-shadow: 2px 2px white;
+} 
+h3, dt { color: #8C3826; /*Set text color for h3 and dt*/
+}
+h4 {
+	background-color: #330000; /*Set background color for h4*/
+	font-size: 1.2em; /*Set font size for h4*/ 
+	padding-left: .5em; /*Add left padding*/
+	padding-bottom: 0; /*Add bottom padding*/
+	text-transform: uppercase; /*Convert text to uppercase*/
+	border-bottom: 1px solid #221811; /*Add bottom border*/
+	clear: left; /*Clear Float*/
+}
+/*styles for r corners*/
+#rcorners1 {
+  border-radius: 15px;
+  background: #87CEFA;
+  padding: 20px; 
+  max-width: 1024px;
+  max-height: 420px;  
+}	
+
+/*Styles for image*/
+#scenicdrivein {
+	background-image: url(../images/scenicdriveinmed.jpg);/*Set background image*/
+	height: 300px; /*Set height*/
+	background-size: 100% 100%; /*Set background image to cover the width of the box the wrapper creates*/
+	background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+#scorsroom {
+	background-image: url(../images/littlesuite.jpg);/*Set background image*/
+	height: 300px; /*Set height*/
+	background-size: 100% 100%; /*Set background image to cover the width of the box the wrapper creates*/
+	background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+#tarantroom {
+	background-image: url(../images/littleterrace.jpg);/*Set background image*/
+	height: 300px; /*Set height*/
+	background-size: 100% 100%; /*Set background image to cover the width of the box the wrapper creates*/
+	background-repeat: no-repeat; /* Prevent background image from repeating */
+}
+#mobile { display: inline; } /*Display as inline elements*/
+#desktop { display: none; } /*hide element*/
+
+
+/*Style Rules for Table Element*/
+table  { margin: auto; /*Center The Table*/
+		width: 90%;   /*Set Width to 90% of the container*/
+		border-spacing: 0; /*Remove spacing between table cells*/
+}
+th, td { padding: 10px;} /*Adding padding to table cells*/
+tr:nth-of-type(odd) {background-color: #87CEFA;} /*Background color for odd rows*/
+
+/*Styles for the form Element*/
+form {
+	display: flex; /*Use Flexbox*/
+	flex-direction: column; /*Arrange items in a column*/
+	padding-left: 1em; /*Add left padding*/
+	width: 80% /*Set width*/
+}
+/*Styles For the Footer Element*/
+footer { background-color: #CCCCCC; /*Set background color*/
+       padding: 20px; /*Add padding*/
+       text-align: center; /*Align text to center*/
+	   font-size: small; /*Set font size for footer*/
+	   font-style: italic; /*Set font for footer*/
+}
+/*media Query for Medium Screen*/
+@media (min-width: 600px) {
+	/*Styles for the headers*/
+.header img {
+	float: left;
+	width: 220px;
+	height: 200px;
+}
+.header img {
+		background-repeat: no-repeat;
+		padding-left:0; /*Add left padding*/
+	}
+
+.header h1{ font-size: 4em;} /*Font size for h1*/
+	nav ul {
+		flex-flow: row nowrap; /*Arrange items in a single row*/
+		justify-content: space-around; /*Distribute items evenly*/
+	}
+	nav li { border-bottom: 1px solid #000000; /*Add bottom border*/
+	padding: .5em 1em; /*Add padding*/
+	width: 100%; /*Set width*/
+	}
+
+	/*Styles for images*/
+#scenicdrivein {
+	background-image: url(../images/scenicdrivein.jpg);/*Set background image*/
+	max-width: 900px;
+	max-height: 550px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 9px solid #ddd;
+    border-radius: 4px;
+	padding: 5px;
+	
+}
+#scorsroom {
+	background-image: url(../images/scorsesessuite.jpg);/*Set background image*/
+	max-width: 900px;
+	max-height: 550px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 9px solid #ddd;
+    border-radius: 4px;
+	padding: 5px;
+}
+#tarantroom {
+	background-image: url(../images/tarantinoterrace.jpg);/*Set background image*/
+	max-width: 900px;
+	max-height: 550px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 9px solid #ddd;
+    border-radius: 4px;
+	padding: 5px;
+}
+#flow {
+		display: flex; /*Use flexbox*/
+		flex-direction: row; /*Arrange items in a row*/
+	}
+
+	#mobile { display: none; } /*Hide Element*/
+	#desktop { display: inline; } /*Display as inline element*/
+/*Form Styles*/
+	form {
+		width: 60%; /*Set width*/
+		display: grid;/*Use grid layout*/
+		grid-gap:1em; /*Set gap between grid items */
+		gap:1em; /*Set Gap*/
+		grid-template-columns: 6em 1fr; /*Define grid template columns*/
+	} 
+	input [type="submit"] { 
+		grid-column: 2 / 3; /*Set Grid Column span*/
+		width:9em; /*Set width*/
+	}
+	.details {
+		display: flex; /*Use flexbox*/
+		flex-direction: row; /*Arrange items in a row*/
+	}
+}
+	  
+/* Media Query for Large Screen*/
+@media (min-width: 1024px) {
+	@supports (display: grid) {
+		header{ grid-area: header; } /*Set grid area*/
+		/*Styles for Headings*/
+
+		nav { grid-area: nav; } /*Set grid area*/
+		main { grid-area: main; } /*Set grid area*/
+		footer { grid-area: footer; } /*Set grid area*/
+		#wrapper {
+			background-color:#FFFFFF;/*Set background color*/
+			color: #000000; /*Set text color*/
+		    box-shadow: 5px 5px 5px #000000;
+			display: grid; /*Use grid layout*/
+			grid-template:
+				"header header"
+				"nav main"
+				"nav footer"
+				/ 280px; /*Set grid template*/
+			
+}
+		
+		nav ul {
+			flex-direction: column; /*Arrange items in a column*/
+}		
+}
+}
+	

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cliffside Cinema B&amp;B - Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="styles/casita.css" rel="stylesheet">
+<meta name="description" content="Contact us for an exclusive event or be a part of our coveted movie premiere events.">
+
+<body>
+	<!--Wrapper-->
+	<div id="wrapper">
+		<!--Header Section-->
+			<header class="header">
+		<img src="images/logo.jpg"  alt="cinema reel logo">
+			<h1>Cliffside Cinema B&amp;B</h1>
+		</header>
+		<!--Navigation Section-->
+		<nav>
+			<ul> 
+				<li><a href="index.html">Home</a></li>
+				<li><a href="rooms/scorsese.html">Scorsese Suite</a></li>
+				<li><a href="rooms/tarantino.html">Tarantino Terrace</a></li>
+				<li><a href="events/drive-in.html">Drive-in</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<img src="images/colorreel.jpg" alt="Contact Us" width="238" height="120">
+		</nav>
+		
+		<!--Main Content Section-->
+		<main>
+		
+			<h2>Thank you for visiting our website!</h2>
+			 <div id="rcorners1">
+			<p> For inquiries about our B&amp;B lodging, cinema premiere events, or wedding/graduation events, please fill out the <b>required</b> contact information below(indicated by a star *) and one of our representatives will be in touch! </p>
+			<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+				<label for="myName">*<b>Name:</b> </label>
+				<input type="text" id="myName" name="myName" required>
+			
+				<label for="myEmail">*<b>Email:</b> </label>
+				<input type="email" id="myEmail" name="myEmail" required>
+			
+				<label for="myPhone">*<b>Phone Number:</b> </label>
+				<input type="tel" id="myPhone" name="myPhone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+			
+				<label for="myEvent">My Event: </label>
+				<textarea name="myEvent" id="myEvent" rows="2" cols="20"></textarea>
+			
+				<input type="submit" value="submit"><br>
+			</form>
+			</div>
+			<br>
+			
+			<audio controls autoplay>
+				<source src="audio/cheer.ogg" type="audio/ogg">
+				<source src="audio/cheer.mp3" type="audio/mpeg">
+				Your browser does not support the audio element.
+			</audio>
+		
+		</main>
+		<!--Footer Section-->
+		<footer>
+			Copyright &copy; 2024 WebMaster <a href="mailto:jdduran@amarillocollege.com">Joe Duran</a>
+		</footer>
+	</div>
+</body>
+</html>
