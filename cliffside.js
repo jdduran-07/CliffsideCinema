@@ -1,5 +1,3 @@
-
-//add some testing line
 // add a food greeting to site visitors depending on time of day
 	const time = new Date().getHours();
 	let greeting;
@@ -34,7 +32,13 @@ function validateForm() {
         document.getElementById("errorMessages").innerHTML = "Please fill out the 3 required fields.";
         return false; // reminder to fill out all 3 fields 
     }
+    //use regExp to verify email doesn't belong to hotmail(constraint validation)
+    var disallowedDomain = /@hotmail\.com$/i; //pg 239 plus w3 schools
 
-    // 3 fields approved
+    if (disallowedDomain.test(email)) {  //w3 schools
+        document.getElementById("errorMessages").innerHTML = "Hotmail addresses are not allowed. Please use a different email.";
+        return false;
+    }
+    // 4 fields approved - 
     return true;
 }
