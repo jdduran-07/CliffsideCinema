@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="styles/casita.css" rel="stylesheet">
 <meta name="description" content="Contact us for an exclusive event or be a part of our coveted movie premiere events.">
-
+<script src = "cliffside.js" defer></script>
 <body>
 	<!--Wrapper-->
 	<div id="wrapper">
@@ -33,35 +33,65 @@
 			<h2>Thank you for visiting our website!</h2>
 			 <div id="rcorners1">
 			<p> For inquiries about our B&amp;B lodging, cinema premiere events, or wedding/graduation events, please fill out the <b>required</b> contact information below(indicated by a star *) and one of our representatives will be in touch! </p>
-			<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+			
+			<!--form-->
+			<form id="contactForm" method="post" action="https://webdevbasics.net/scripts/demo.php" onsubmit="return validateForm()">
+				<div id="errorMessages" style="color: red; margin-bottom: 10px;"></div>
+
 				<label for="myName">*<b>Name:</b> </label>
-				<input type="text" id="myName" name="myName" required>
-			
+				<input type="text" id="myName" name="myName">
+				
 				<label for="myEmail">*<b>Email:</b> </label>
-				<input type="email" id="myEmail" name="myEmail" required>
-			
+				<input type="email" id="myEmail" name="myEmail">
+				
 				<label for="myPhone">*<b>Phone Number:</b> </label>
-				<input type="tel" id="myPhone" name="myPhone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-			
+				<input type="tel" id="myPhone" name="myPhone" placeholder="123-456-7890">
+				
 				<label for="myEvent">My Event: </label>
 				<textarea name="myEvent" id="myEvent" rows="2" cols="20"></textarea>
-			
-				<input type="submit" value="submit"><br>
+				
+				<input type="submit" value="Submit"><br>
 			</form>
-			</div>
-			<br>
-			
-			<audio controls autoplay>
-				<source src="audio/cheer.ogg" type="audio/ogg">
-				<source src="audio/cheer.mp3" type="audio/mpeg">
-				Your browser does not support the audio element.
-			</audio>
+			<!-- <label for="myName">*<b>Name:</b> </label>
+
+        <input type="text" id="myName" name="myName" required>
+
+      
+
+        <label for="myEmail">*<b>Email:</b> </label>
+
+        <input type="email" id="myEmail" name="myEmail" required>
+
+      
+
+        <label for="myPhone">*<b>Phone Number:</b> </label>
+
+        <input type="tel" id="myPhone" name="myPhone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+      
+
+        <label for="myEvent">My Event: </label>
+
+        <textarea name="myEvent" id="myEvent" rows="2" cols="20"></textarea>-->
+		</div>
+		<br>
 		
-		</main>
-		<!--Footer Section-->
-		<footer>
-			Copyright &copy; 2024 WebMaster <a href="mailto:jdduran@amarillocollege.com">Joe Duran</a>
-		</footer>
-	</div>
+		<audio controls autoplay>
+			<source src="audio/cheer.ogg" type="audio/ogg">
+			<source src="audio/cheer.mp3" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+
+
+	</main>
+	
+	<!-- Footer Section -->
+	<footer>
+		Copyright &copy; 2024 WebMaster <a href="mailto:jdduran@amarillocollege.com">Joe Duran</a>
+	</footer>
+</div>
+
+<!-- Link to External JavaScript File -->
+<script src="cliffside.js"></script>
 </body>
 </html>
