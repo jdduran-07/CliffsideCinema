@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="styles/casita.css" rel="stylesheet">
 	<meta name="description" content="Welcome to the jewel of the West Texas area, the acclaimed Cliffside Cinema B&B!">
+	<script src="cliffside.js" defer></script>
 </head>
-<!--  this is new -->
 <body> 
 	<!--Wrapper-->
 	<div id="wrapper">
@@ -46,25 +46,8 @@
 		<footer>
 			Copyright &copy; 2024 WebMaster <a href="mailto:jdduran@amarillocollege.com">Joe Duran</a>
 			<div>
-			<!--Adding a script to report last modification to online page.-->
-				<script>
-					document.write("This page was last modified on: " + document.lastModified)
-				</script>
 				<p id="foodgreet"></p>
-				
-				<!--Adding a script to perform food based greeting depending on time of visit-->
-				<script>
-					const time = new Date().getHours();
-					let greeting;
-						if (time < 11) {
-						greeting = "Our breakfast is something you won't want to miss!";
-						} else if (time < 17) {
-						greeting = "Lunch with a matinee movie showing?";
-						} else {
-						greeting = "Nothing like dinner and a movie.";
-}
-					document.getElementById("foodgreet").innerHTML = greeting;
-				</script>
+				<div id="lastModifiedDate" style="color: #333; margin-top: 20px;"></div>
 			</div>
 		</footer>
 	</div>
